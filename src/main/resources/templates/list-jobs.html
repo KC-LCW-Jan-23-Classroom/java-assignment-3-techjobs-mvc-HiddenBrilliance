@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org/">
+<html xmlns:th="http://www.thymeleaf.org/" xmlns="http://www.w3.org/1999/html">
 <head th:replace="fragments :: head">
 </head>
 <body>
 
-<div th:replace="fragments :: page-header"></div>
+<div th:replace="fragments :: page-header"> </div>
 
-<div class="container body-content">
+<div class="container body-content"></div>
 
     <h1 th:text="${#strings.capitalizeWords(title)}"></h1>
 
@@ -41,11 +41,12 @@
             <td th:text="${job.coreCompetency}"></td>
         </tr>
 
-</table>
-    <br>
-    </th:block>
+        </th:block>
+    </table>
 
-</div>
+
+
 
 </body>
+<!--it is saying there is no closing body tag in the debugger but there is one here-->
 </html>
