@@ -13,7 +13,7 @@
     <!-- TODO #1 - Use a loop to display job results in a table. -->
 
 
-    <table th:block th:each="job : ${jobs}" class="job-listing">
+    <table th:each="job : ${jobs}" class="job-listing" >
     <tr>
         <td>Id</td>
         <td th:text="${job.id}"></td>
@@ -41,12 +41,11 @@
             <td th:text="${job.coreCompetency}"></td>
         </tr>
 
-        </th:block>
     </table>
 
 
 
 
 </body>
-<!--it is saying there is no closing body tag in the debugger but there is one here-->
+
 </html>

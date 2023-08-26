@@ -38,11 +38,7 @@
 
     <!-- TODO #4 - Loop over the search results to display all job fields. -->
 
-    <td>
-        <a href="https://java-techjobs-mvc.launchcodetechnicaltraining.org/list/jobs?column=all"></a>
-    </td>
-
-    <table th:block th:each="job : ${jobs}" class="job-listing">
+    <table th:each="job : ${jobs}" class="job-listing">
         <tr>
             <td>Id</td>
             <td th:text="${job.id}"></td>
@@ -71,9 +67,18 @@
         </tr>
 
     </table>
-    </th:block>
+
 
 </div>
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
